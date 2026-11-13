@@ -104,11 +104,13 @@ function BusinessProfileContent() {
 </a>
 
 <a
-  href={`mailto:${business.email}`}
+  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(business.email)}`}
+  target="_blank"
+  rel="noopener noreferrer"
   className="text-blue-700 hover:underline"
 >
   {business.email}
-</a>        </div>
+</a>     </div>
       </div>
     </main>
   );
